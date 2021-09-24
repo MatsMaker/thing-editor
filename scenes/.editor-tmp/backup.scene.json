@@ -1,0 +1,17 @@
+{
+	"c": "Main",
+	"p": {
+		"backgroundColor": 2823437,
+		"__libSceneName": "main"
+	},
+	":": [
+		{
+			"c": "AnimatedSprite",
+			"p": {
+				"x": 233,
+				"y": 129,
+				"spineData": "img/fighter/fighter.json"
+			}
+		}
+	]
+}
