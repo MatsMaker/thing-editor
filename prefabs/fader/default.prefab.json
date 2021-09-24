@@ -1,0 +1,138 @@
+{
+	"c": "OrientationTrigger",
+	"p": {
+		"name": "fader/default",
+		"landscapeX": 640,
+		"landscapeY": 360,
+		"landscapeAlpha": 0.5,
+		"portraitX": 204,
+		"portraitY": 343,
+		"portraitR": 1.571
+	},
+	":": [
+		{
+			"c": "MovieClip",
+			"p": {
+				"name": "fader",
+				"scale.x": 80,
+				"scale.y": 45,
+				"image": "WHITE",
+				"tint": 0,
+				"timeline": {
+					"l": {
+						"hide fader": 180
+					},
+					"p": 0.02,
+					"d": 0.85,
+					"f": [
+						{
+							"n": "alpha",
+							"t": [
+								{
+									"v": 0,
+									"t": 0,
+									"m": 1
+								},
+								{
+									"v": 1,
+									"t": 8,
+									"m": 1,
+									"a": "game.faderShoot"
+								},
+								{
+									"v": 1,
+									"t": 10,
+									"m": 1,
+									"a": "this.stop"
+								},
+								{
+									"v": 1,
+									"t": 180,
+									"m": 1
+								},
+								{
+									"v": 0,
+									"t": 191,
+									"m": 1,
+									"a": "game.faderEnd"
+								}
+							]
+						}
+					]
+				},
+				"__previewFrame": 1
+			}
+		},
+		{
+			"c": "MovieClip",
+			"p": {
+				"name": "loading-label",
+				"timeline": {
+					"l": {
+						"hide fader": 238
+					},
+					"p": 0.02,
+					"d": 0.85,
+					"f": [
+						{
+							"n": "alpha",
+							"t": [
+								{
+									"v": 0,
+									"t": 0,
+									"m": 1
+								},
+								{
+									"v": 0,
+									"t": 125,
+									"m": 1
+								},
+								{
+									"v": 1,
+									"t": 133,
+									"m": 1
+								},
+								{
+									"v": 0.8200000000000001,
+									"t": 144,
+									"m": 1
+								},
+								{
+									"v": 1,
+									"t": 157,
+									"m": 1
+								},
+								{
+									"v": 0.4,
+									"t": 171,
+									"m": 1
+								},
+								{
+									"v": 1,
+									"t": 183,
+									"m": 1,
+									"j": 132
+								},
+								{
+									"v": 0,
+									"t": 264,
+									"m": 1
+								}
+							]
+						}
+					]
+				},
+				"__previewFrame": 1
+			},
+			":": [
+				{
+					"c": "Text",
+					"p": {
+						"translatableText": "loading",
+						"style.fontSize": 35
+					}
+				}
+			]
+		}
+	]
+}

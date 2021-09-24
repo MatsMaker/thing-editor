@@ -1,0 +1,13 @@
+{
+	"c": "FlyText",
+	"p": {
+		"name": "flytext",
+		"x": 700,
+		"y": 408,
+		"text": "Fly Text",
+		"style.fontSize": 20,
+		"style.fill": "#ff0",
+		"style.stroke": "#a50",
+		"style.strokeThickness": 3
+	}
+}

@@ -1,0 +1,68 @@
+{
+	"c": "Container",
+	"p": {
+		"name": "ui/city-panel"
+	},
+	":": [
+		{
+			"c": "Label",
+			"p": {
+				"x": 32,
+				"y": 695,
+				"text": "player hp",
+				"style.align": "left",
+				"dataPath": "game.currentScene.localPlayer.currentHp"
+			}
+		},
+		{
+			"c": "OrientationTrigger",
+			"p": {
+				"landscapeX": 1244,
+				"landscapeY": 48,
+				"portraitX": 357,
+				"portraitY": 47
+			},
+			":": [
+				{
+					"c": "Button",
+					"p": {
+						"tint": 14417920,
+						"onClick": "game.showScene`world",
+						"sndClick": "click",
+						"sndOver": "over"
+					},
+					":": [
+						{
+							"c": "DSprite",
+							"p": {
+								"scale.x": 3.125,
+								"scale.y": 3.125,
+								"image": "WHITE",
+								"tint": 16711680
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"pivot.y": 19,
+								"text": "X",
+								"style.fontSize": 37
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": 1181,
+				"y": 621,
+				"image": "images/ui/map.png",
+				"onClick": "showScene`world",
+				"sndClick": "click",
+				"sndOver": "over"
+			}
+		}
+	]
+}
